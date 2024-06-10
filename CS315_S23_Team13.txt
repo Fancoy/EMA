@@ -1,0 +1,38 @@
+###Test Program###
+bool func foo(bool p, bool q, bool  r) {
+	out("Function name: foo")
+	out("p = ", p)
+	out("q = ", q)
+	out("r = ", r)
+	if(r == true){
+	return (p ==> (q && r))
+	}
+	else if(p != true){
+	return (q ==> (p || r))
+	}
+	else{
+	return (r <==> p)
+	}
+}
+void func foo2( d ){
+	out("Const variable, d = ", d)
+}
+bool a = true
+bool b = false
+while(!b) { bool c = true }
+a = !c
+for a loop [true, false] {
+	for b loop [true, false] {
+		c = foo(a, b, false)
+		out("a = ", a)
+		out("b = ", b)
+		out("c = ",c)
+	}
+}
+const bool d = true
+
+foo2(boo d)
+bool arr = [true,true,false,true,false]
+out("Array's third element is equal to ",arr[$$$])
+bool e = in("Enter value of e variable ")
+out("User decided e's value as ", e)
